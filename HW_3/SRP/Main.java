@@ -1,12 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        Vehicle vehicle = new Car(220);
-        System.out.println(vehicle);
-        vehicle = new Bus(160);
-        System.out.println(vehicle);
-        vehicle = new Vehicle(220, "vehicle");
-        System.out.println(vehicle);
-
-
+        Emploee teacher = new Emploee("Teacher", 2);
+        CalculateSalary calculateSalary = new CalculateSalary(100000);
+        System.out.println("Salary of " + teacher.name + " = " + calculateSalary.calculateSalary(teacher) + " RUB");
     }
 }

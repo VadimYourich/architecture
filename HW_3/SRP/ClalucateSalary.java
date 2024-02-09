@@ -1,13 +1,11 @@
-public class ClalucateSalary {
+public class CalculateSalary {
     int baseSalary;
-    int valueTime;
 
-    public ClalucateSalary(int baseSalary, int valueTime) {
-        this.baseSalary = baseSalary;
-        this.valueTime = valueTime;
-    }
-    public int calculateSalary(){
-        return valueTime * baseSalary;
+    public CalculateSalary(int rate) {
+        this.baseSalary = rate;
     }
 
+    public double calculateSalary(Emploee emploee) {
+        return this.baseSalary * emploee.salaryFactor;
+    }
 }

@@ -1,3 +1,3 @@
-public interface Shape3d extends Shape{
-    double value();
+public interface Shape3D extends Shape{
+    double volume();
 }
